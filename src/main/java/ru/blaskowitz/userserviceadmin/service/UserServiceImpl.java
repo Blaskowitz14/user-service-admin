@@ -44,6 +44,6 @@ public class UserServiceImpl implements UserService {
         User userToDelete = getUser(id);
         userToDelete.setIsDeleted(true);
         userRepository.save(userToDelete);
-        userNotificationSender.sendUserDeletedNotification(id);eeee
+        userNotificationSender.sendUserDeletedNotification(id);
     }
 }
